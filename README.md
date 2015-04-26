@@ -1,5 +1,4 @@
-# Jeff Bean's submission for the course project for the Coursera "Getting and Cleaning Data"
-course.
+# Jeff Bean's submission for the course project for the Coursera "Getting and Cleaning Data" course.
 
 ## Contents
 **run_analysis.R**: assumed run from a directory containing the UCI smartphone accelerometer data
