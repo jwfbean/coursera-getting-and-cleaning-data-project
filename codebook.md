@@ -48,9 +48,12 @@ to the features containing the text "mean" or "std" are selected.
 ## Output data set:
 
 Output data set rows consist of:
-subject id from the data set
-activity_label corresponding to the activity code corresponding to the labels associated with the data set as found in y_train.txt and y_test.txt
-The additional columns (3-80) are numeric and have kept their names from the features file. In the output they contain the average measurement per subject per activity for the named feature. Units unchanged.
+
+**subject** id from the data set
+
+**activity_label** corresponding to the activity code corresponding to the labels associated with the data set as found in **y_train.txt** and **y_test.txt**
+
+The additional columns (**3-80**) are numeric and have kept their names from the features file. In the output they contain the average measurement per subject per activity for the named feature. Units unchanged.
 
 So the total output data set looks has these columns (as output by colnames function):
 
