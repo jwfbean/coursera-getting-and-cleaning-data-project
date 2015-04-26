@@ -12,7 +12,7 @@ apply the contents of features.txt as column names in the data set.
 - x_train and x_test correspond line-by-line as does y_train and y_test. This allows us to easily merge the x and y
 data sets as well as the train and test data sets.
 
-###Analysis Analysis does the following:
+###Analysis does the following:
 1.  Reads activity_labels.txt contaiing a text description of the integer activity code field
 2.  Reads features.txt containing the name of the feature measured by the integer feature_id. Later used as column names in our analysis.
 3.  Reads subject data from test and train datasets
