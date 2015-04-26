@@ -17,6 +17,8 @@ These files must be present in order for the program to run.
 
 **features.txt**: Feature names listed here corresponds to column names in the training data set. Row numbers in
 features.txt match column numbers in X_train.txt and X_test.txt.
+
+
 activity_labels.txt: Activity labels listed here corresponds to the activity_label field in the tidy data set.
 the assumed set of assumed activity labels is:
 - 1 WALKING
@@ -27,9 +29,12 @@ the assumed set of assumed activity labels is:
 - 6 LAYING
 
 **train/X_train.txt**: Training data set
+
 **train/y_train.txt**: Activity codes for the training data set, an integer value between 1-6, corresponding to the 
 activity labels in activity_labels.txt and matching the train data set by row number.
+
 **test/X_test.txt**: Test data set
+
 **test/y_test.txt**: Activity codes for the test data set, an integer value between 1-6, corresponding to the activity
 labels in activity_labels.txt and matching the test data set by row number.
 
