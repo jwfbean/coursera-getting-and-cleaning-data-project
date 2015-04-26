@@ -40,7 +40,7 @@ testdata <- read.table('test/X_test.txt', row.names = NULL)
 traindata <- read.table('train/X_train.txt', row.names = NULL)
 
 #
-# Apply the column names from the features
+# Apply the column names from the features - STEP FOUR
 #
 colnames(testdata) <- features$feature_name
 colnames(traindata) <- features$feature_name
@@ -53,7 +53,7 @@ test_activities <- merge(testlabels, activities, by="activity_code", sort=FALSE)
 train_activities <- merge(trainlabels, activities, by="activity_code", sort=FALSE)
 
 #
-# Apply the activity labels 
+# Apply the activity labels - STEP THREE
 #
 
 testdata$activity_label <- test_activities$activity_label
@@ -66,7 +66,7 @@ testdata$subject <- subject_test$V1
 traindata$subject <- subject_train$V1
 
 #
-# Merge training and test data sets
+# Merge training and test data sets - STEP ONE (COMPLETING STEPS THREE AND FOUR TOO)
 #
 fulldata <- rbind(testdata, traindata)
 
@@ -83,13 +83,13 @@ stdcols<-grep('std', names(fulldata))
 newcols<-c(562:563)
 
 #
-# Pull out mean and stddev columns as well as the subject and activity columns
+# Pull out mean and stddev columns as well as the subject and activity columns - STEP TWO
 #
 extractedcols<-sort(c(meancols, stdcols, newcols))
 extracted<-fulldata[extractedcols]
 
 #
-# Find the mean measurement per subject per activity
+# Find the mean measurement per subject per activity - STEP FIVE
 #
 
 dt <- data.table(extracted)
